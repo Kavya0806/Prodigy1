@@ -1,0 +1,85 @@
+body {
+  background: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  background: #333;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  margin-top: 5rem;
+  min-width: 350px;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.stopwatch {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background: #444;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.1rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 2px;
+  transition: background 0.2s;
+}
+
+.controls button:active,
+.controls button:hover {
+  background: #007bff;
+}
+
+.laps {
+  margin-top: 1rem;
+}
+
+.laps h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#lapList {
+  padding-left: 1.3rem;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #e2e2e2;
+  font-size: 1.05rem;
+}
+
+#lapList li {
+  margin-bottom: 0.25rem;
+  background: #222;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+#lapList li:nth-child(odd) {
+  background: #2a2a2a;
+}
