@@ -1,0 +1,115 @@
+body {
+  background: #122;
+  color: #fff;
+  font-family: 'Segoe UI', Verdana, Geneva, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.container {
+  margin-top: 3rem;
+  background: #23334b;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  min-width: 350px;
+  box-shadow: 0 2px 24px 0 #2a3158a0;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mode-select {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mode-select label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background: #1c273a;
+  border-radius: 6px;
+  padding: 0.5rem 1.3rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 64px);
+  grid-template-rows: repeat(3, 64px);
+  gap: 10px;
+  justify-content: center;
+  margin: 1rem 0;
+  background: #1b2536;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px #00000044;
+  padding: 12px;
+}
+
+.cell {
+  background: #283d5c;
+  border-radius: 8px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: #00ffe7;
+  transition: background .18s;
+  font-weight: 600;
+}
+.cell.taken {
+  cursor: not-allowed;
+  color: #ffc903;
+}
+.cell.winner {
+  background: #00ffe799;
+  color: #211f16;
+  font-weight: 800;
+  box-shadow: 0 0 12px 3px #00ffe7cc;
+}
+.status {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.7rem 0 1rem 0;
+  min-height: 1.4em;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+button {
+  background: #00ffe7;
+  color: #1b2536;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter .19s;
+}
+button:hover {
+  filter: brightness(90%);
+}
+
+@media (max-width: 500px) {
+  .container { padding: 1.2rem 0.5rem; min-width: unset; }
+  .board { grid-template-columns: repeat(3, 46px); grid-template-rows: repeat(3, 46px); padding: 5px; }
+  .cell { font-size: 1.6rem; }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Tic-Tac-Toe</h1>
+    <div class="mode-select">
+      <label><input type="radio" name="mode" value="pvp" checked /> Player vs Player</label>
+      <label><input type="radio" name="mode" value="ai" /> Player vs AI</label>
+    </div>
+    <div class="scoreboard" id="scoreboard">
+      <span id="score-x">X: 0</span>
+      <span id="score-o">O: 0</span>
+      <span id="score-draw">Draws: 0</span>
+    </div>
+    <div id="board" class="board"></div>
+    <div id="status" class="status"></div>
+    <div class="controls">
+      <button id="restart">Restart</button>
+      <button id="newgame">New Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
