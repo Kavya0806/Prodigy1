@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">ModernNav</a>
+            </div>
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-toggle" 
+                    id="mobile-toggle" 
+                    aria-expanded="false" 
+                    aria-controls="nav-menu" 
+                    aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu" id="nav-menu" role="menubar" aria-hidden="false">
+                <li class="nav-item" role="none">
+                    <a href="#home" class="nav-link active" role="menuitem" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#about" class="nav-link" role="menuitem">About</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#services" class="nav-link" role="menuitem">Services</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#portfolio" class="nav-link" role="menuitem">Portfolio</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sample content sections -->
+    <main>
+        <section id="home" class="content-section hero">
+            <h1>Welcome to Advanced Navigation</h1>
+            <p>Scroll down to see the navigation transform with smooth animations.</p>
+        </section>
+        
+        <section id="about" class="content-section">
+            <h2>About Section</h2>
+            <p>Notice how the navigation changes as you scroll through different sections.</p>
+        </section>
+        
+        <!-- Additional sections... -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
